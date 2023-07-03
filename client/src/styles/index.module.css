@@ -1,0 +1,101 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.controls {
+    padding: 50px;
+}
+.container h1 {
+    font-size: 50px;
+    margin-top: 70px;
+    font-weight: 300;
+}
+.container p {
+    margin: 20px 0px;
+}
+.btn_container {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    /* margin-bottom: 30px; */
+}
+.btn_container button {
+    padding: 20px 30px;
+    background: dodgerblue;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.btn_container input {
+    padding: 20px 30px;
+    outline: none;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 1px solid gray;
+    margin-left: 20px;
+}
+.btn_container span {
+    margin-left: 10px;
+    cursor: pointer;
+    color: gray;
+    font-weight: bold;
+}
+.btn_container {
+    position: relative;
+}
+.options {
+    position: absolute;
+    top: 60px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    box-shadow: 2px 3px 5px #80808066;
+    display: none;
+}
+.options ul {
+    list-style: none;
+}
+.options li {
+    margin: 5px 0px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s linear;
+}
+.options li:hover {
+    background-color: #80808022;
+}
+.pic img {
+    height: 100vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1170px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .container .pic {
+        grid-row-start: 1;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .btn_container {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .btn_container input {
+        margin: 0px 0px 15px 0px;
+    }
+    .pic img {
+        height: 50vh;
+        width: 100%;
+    }
+    .container h1 {
+        margin-top: 0px;
+        font-size: 40px;
+    }
+    .btn_container input {
+        width: 60%;
+    }
+}
