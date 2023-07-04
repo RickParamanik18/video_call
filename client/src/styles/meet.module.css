@@ -1,0 +1,25 @@
+.container{
+    background: #1f1f1f;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.attendee_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+.attendee_container .sub{
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+.controlls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px 10px;
+}
